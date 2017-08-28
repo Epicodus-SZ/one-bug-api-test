@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+## CORS urls to Read
+http://embed.plnkr.co/sJ47XTYAdF7YWv9DDH68/
+http://restlet.com/company/blog/2015/12/15/understanding-and-using-cors/
+http://www.concretepage.com/angular-2/angular-2-http-get-parameters-headers-urlsearchparams-requestoptions-example
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

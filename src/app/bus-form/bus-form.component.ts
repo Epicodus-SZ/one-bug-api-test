@@ -17,8 +17,8 @@ export class BusFormComponent implements OnInit {
   }
 
   getStopApi(stopId: string) {
-    this.oneBusApi.getArrivalsAndDeparturesByStop(stopId).subscribe(response => {
-      this.apiData = response.json();
+    this.oneBusApi.apitest().subscribe(response => {
+      this.apiData = response;
     });
     console.log(this.apiData);
   }

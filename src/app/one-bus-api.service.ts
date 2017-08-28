@@ -26,21 +26,23 @@ export class OneBusApiService {
 
   constructor(private http: Http)  {}
 
-  getArrivalsAndDeparturesByStop(stopId: string) {
-    let tempHeader = new Headers();
-    tempHeader.append('Access-Control-Allow-Credentials', 'true');
-    tempHeader.append('Access-Control-Allow-Origin', '*');
-    tempHeader.append('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  apitest() {
+    let tempHead = new Headers();
+    tempHead.append('Access-Control-Allow-Credentials', 'true');
+    tempHead.append('Access-Control-Allow-Origin', '*');
+    tempHead.append('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    tempHead.append('Access-Control-Allow-Headers', 'Content-Type');
 
     let basicOptions : RequestOptionsArgs = {
-      url: 'http://api.pugetsound.onebusaway.org/api/where/arrivals-and-departures-for-stop/1_570.xml?key=377e7bc6-e6c6-494d-b18f-f66b6dd49226',
-      method: RequestMethod.Get,
-      search: null,
-      headers: new Headers({'Access-Control-Allow-Origin':'*', 'Access-Control-Allow-Credentials': true}),
-      body: null
+      url: 'http://api.pugetsound.onebusaway.org/api/where/arrivals-and-departures-for-stop/',
+      headers: tempHead
     };
 
-    return this.http.options("http://api.pugetsound.onebusaway.org/api/where/arrivals-and-departures-for-stop/1_570.xml?key=377e7bc6-e6c6-494d-b18f-f66b6dd49226",basicOptions);
+    // let basicOptions : RequestOptionsArgs = {
+    //   headers: new Headers({'Access-Control-Allow-Origin':'*/*', 'Access-Control-Allow-Credentials': true,'Access-Control-Allow-Headers': 'Content-Type'})
+    // };
+
+    return this.http.get("http://api.pugetsound.onebusaway.org/api/where/arrivals-and-departures-for-stop/1_570.json?callback=steve&key=377e7bc6-e6c6-494d-b18f-f66b6dd49226", basicOptions);
 
     // return this.http.get("http://api.pugetsound.onebusaway.org/api/where/arrivals-and-departures-for-stop/1_570.xml?key=377e7bc6-e6c6-494d-b18f-f66b6dd49226",basicOptions);
   }
