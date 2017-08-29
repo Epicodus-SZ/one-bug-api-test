@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { BusFormComponent } from './bus-form/bus-form.component';
 
+import {JsonpModule, Jsonp, Response} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { BusFormComponent } from './bus-form/bus-form.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    JsonpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

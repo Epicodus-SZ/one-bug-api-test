@@ -6,6 +6,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 http://embed.plnkr.co/sJ47XTYAdF7YWv9DDH68/
 http://restlet.com/company/blog/2015/12/15/understanding-and-using-cors/
 http://www.concretepage.com/angular-2/angular-2-http-get-parameters-headers-urlsearchparams-requestoptions-example
+****** WOOT
+https://codecraft.tv/courses/angular/http/jsonp-with-observables/
+****** WOOT
 
 ## Development server
 
