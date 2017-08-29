@@ -1,0 +1,10 @@
+<h2>Watch List</h2>
+
+<div *ngFor="let watch of watches | async" class="panel panel-default">
+  <div class="panel-body">
+    <h4>Stop Id:{{watch.stopId}}</h4><br>
+    <h4>Route Id:{{watch.routeId}}</h4><br>
+    <h4>Time till next arrival</h4><br>
+  </div>
+
+</div>

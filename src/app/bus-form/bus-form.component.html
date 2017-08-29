@@ -2,9 +2,15 @@
 
 <form>
   <div class="form-group">
-    <label for="camera">Stop Id</label>
+    <label for="stopId">Stop Id</label>
     <input type=stopId #stopId>
   </div>
+  <div class="form-group">
+    <label for="routeId">Route Id</label>
+    <input type=routeId #routeId>
+  </div>
 
-  <button (click)="getStopApi(stopId.value)">Get Stop Api</button>
+  <button (click)="addWatch(stopId.value, routeId.value)">Add bus to Watch</button>
 </form>
+
+{{currentTime}}
